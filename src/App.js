@@ -693,7 +693,7 @@ class App extends React.Component {
                     img: 'https://www.apple.com/v/mac-studio/a/images/overview/hero/m1_ultra__ffux5kep74mm_large.jpg'
                 },
             ],
-            monobloks: [
+            monoblocs: [
 
                 {
                     title: 'Apple iMac 27" 5K 2020',
@@ -824,7 +824,7 @@ class App extends React.Component {
                     mMini={this.state.mMini}
                     macPro={this.state.macPro}
                     mStudio={this.state.mStudio}
-                    monobloks={this.state.monobloks}
+                    monoblocs={this.state.monoblocs}
                     addToBasket={this.addToBasket}
 
                 />

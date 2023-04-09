@@ -103,7 +103,18 @@ class MacPro extends Component {
                                 <div className={classes.btnBox}>
                                     <Button size='small'
                                             variant='contained'
-                                            className={classes.addBtn}>Add to cart</Button>
+                                            className={classes.addBtn}
+                                        // onClick={() => this.props.addToOrder(selectedProduct); this.toggleModal() }
+                                            onClick={() => {
+                                                // addToBasket(selectedProduct);
+                                                // this.toggleModal()
+                                                const handleAddToBasket = () => {
+                                                    addToBasket(selectedProduct);
+                                                    this.toggleModal();
+                                                };
+                                                handleAddToBasket();
+                                            }}
+                                    >Add to cart</Button>
                                 </div>
                                 <div className={classes.description}>
                                     <h2 className={classes.desc}>

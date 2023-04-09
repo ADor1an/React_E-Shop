@@ -7,101 +7,101 @@ class Monoblocks extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            monobloks: [
-
-                {
-                    title: 'Apple iMac 27" 5K 2020',
-                    resolution: '5120x2880 (16:9) Retina 5K ',
-                    bright: '500 nits',
-                    procFirstMod: 'intel core i5:(10500/10600)',
-                    procSecondMod: 'intel core i7:(10700K)',
-                    procThirdMod: 'intel core i9:(10910)',
-                    graphic: 'Radeon Pro 5300/5500XT/5700XT',
-                    camera: '1080p FaceTime HD',
-                    wifi: 'WIFI5',
-                    bluetooth: '5v',
-                    ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 2, Thunderbolt v3 - 2',
-                    ram: '8GB/16GB/32GB/64GB/128GB',
-                    ramSlots: '4',
-                    ssd: 'from 256GB to 2048gb ',
-                    videoRam: 'from 4GB in Radeon Pro 5300 to 16GB in Radeon Pro 5700XT',
-                    img: 'https://m.ua/jpg_zoom1/1850116.jpg'
-                },
-                {
-                    title: 'Apple iMac 21.5" 4K 2019',
-                    resolution: '4096x2304 (16:9) Retina 5K ',
-                    bright: '500 nits',
-                    procFirstMod: 'intel core i3:(8100B)',
-                    procSecondMod: 'intel core i5:(8500B)',
-                    procThirdMod: 'intel core i7:(8700B)',
-                    graphic: 'Radeon Pro 555X/560X/Vega 20',
-                    camera: '1080p FaceTime HD',
-                    wifi: 'WIFI5',
-                    bluetooth: '4.2v',
-                    ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 2, Thunderbolt v3 - 2',
-                    ram: '8GB/16GB/32GB',
-                    ramSlots: 'embedded',
-                    ssd: 'from 256GB to 1024GB ',
-                    videoRam: 'from 2GB in Radeon Pro 555X to 4GB in Radeon Pro 560X and Vega 20 ',
-                    img: 'https://mzimg.com/big/t1/g1ggupwdyt1.jpg'
-                },
-                {
-                    title: 'Apple iMac 27" 5K 2019 ',
-                    resolution: '5120x2880 (16:9) Retina 5K ',
-                    bright: '500 nits',
-                    procFirstMod: 'intel core i5:(9600K)',
-                    // procSecondMod: 'intel core i7:(10700K)',
-                    // procThirdMod: 'intel core i9:(10910)',
-                    graphic: 'Radeon Pro 580X',
-                    camera: '1080p FaceTime HD',
-                    wifi: 'WIFI5',
-                    bluetooth: '4.2v',
-                    ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 2, Thunderbolt v3 - 2',
-                    ram: '8GB/16GB/32GB/64GB/128GB',
-                    ramSlots: '4',
-                    ssd: 'from 256GB to 2048GB ',
-                    videoRam: '8GB',
-                    img: 'https://mzimg.com/big/l1/g1ggtxkjfl1.jpg'
-                },
-                {
-                    title: 'Apple iMac 27" 5K 2017',
-                    resolution: '5120x2880 (16:9) Retina 5K ',
-                    bright: '500 nits',
-                    procFirstMod: 'intel XEON W-2140B',
-                    procSecondMod: 'intel core i7:(10700K)',
-                    procThirdMod: 'intel core i9:(10910)',
-                    graphic: 'Radeon Pro Vega 56',
-                    camera: '1080p FaceTime HD',
-                    wifi: 'WIFI5',
-                    bluetooth: '4.2v',
-                    ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 4, Thunderbolt v3 - 4',
-                    ram: '8GB/16GB/32GB/64GB',
-                    ramSlots: '4',
-                    ssd: 'from 256GB to 2048gb ',
-                    videoRam: '8GB',
-                    img: 'https://m.ua/jpg_zoom1/1127968.jpg'
-                },
-                {
-                    title: 'Apple iMac 24" 2021',
-                    resolution: '4480x2520 (16:9) Retina 4,5K ',
-                    bright: '500 nits',
-                    procFirstMod: 'Apple Silicone M1 8 cores',
-                    // procSecondMod: 'intel core i7:(10700K)',
-                    // procThirdMod: 'intel core i9:(10910)',
-                    graphic: 'Apple Silicone M1 7-Core/ M1 8-Core',
-                    camera: '1080p FaceTime HD',
-                    wifi: 'WIFI6',
-                    bluetooth: '5v',
-                    ports: 'USB4 - 2, Thunderbolt v3 - 2',
-                    ram: '8GB/16GB',
-                    ramSlots: '4',
-                    ssd: 'from 256GB to 2048gb ',
-                    videoRam: 'Combined memory',
-                    img: 'https://m.ua/jpg_zoom1/2037928.jpg'
-                },
-
-
-            ],
+            // monobloks: [
+            //
+            //     {
+            //         title: 'Apple iMac 27" 5K 2020',
+            //         resolution: '5120x2880 (16:9) Retina 5K ',
+            //         bright: '500 nits',
+            //         procFirstMod: 'intel core i5:(10500/10600)',
+            //         procSecondMod: 'intel core i7:(10700K)',
+            //         procThirdMod: 'intel core i9:(10910)',
+            //         graphic: 'Radeon Pro 5300/5500XT/5700XT',
+            //         camera: '1080p FaceTime HD',
+            //         wifi: 'WIFI5',
+            //         bluetooth: '5v',
+            //         ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 2, Thunderbolt v3 - 2',
+            //         ram: '8GB/16GB/32GB/64GB/128GB',
+            //         ramSlots: '4',
+            //         ssd: 'from 256GB to 2048gb ',
+            //         videoRam: 'from 4GB in Radeon Pro 5300 to 16GB in Radeon Pro 5700XT',
+            //         img: 'https://m.ua/jpg_zoom1/1850116.jpg'
+            //     },
+            //     {
+            //         title: 'Apple iMac 21.5" 4K 2019',
+            //         resolution: '4096x2304 (16:9) Retina 5K ',
+            //         bright: '500 nits',
+            //         procFirstMod: 'intel core i3:(8100B)',
+            //         procSecondMod: 'intel core i5:(8500B)',
+            //         procThirdMod: 'intel core i7:(8700B)',
+            //         graphic: 'Radeon Pro 555X/560X/Vega 20',
+            //         camera: '1080p FaceTime HD',
+            //         wifi: 'WIFI5',
+            //         bluetooth: '4.2v',
+            //         ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 2, Thunderbolt v3 - 2',
+            //         ram: '8GB/16GB/32GB',
+            //         ramSlots: 'embedded',
+            //         ssd: 'from 256GB to 1024GB ',
+            //         videoRam: 'from 2GB in Radeon Pro 555X to 4GB in Radeon Pro 560X and Vega 20 ',
+            //         img: 'https://mzimg.com/big/t1/g1ggupwdyt1.jpg'
+            //     },
+            //     {
+            //         title: 'Apple iMac 27" 5K 2019 ',
+            //         resolution: '5120x2880 (16:9) Retina 5K ',
+            //         bright: '500 nits',
+            //         procFirstMod: 'intel core i5:(9600K)',
+            //         // procSecondMod: 'intel core i7:(10700K)',
+            //         // procThirdMod: 'intel core i9:(10910)',
+            //         graphic: 'Radeon Pro 580X',
+            //         camera: '1080p FaceTime HD',
+            //         wifi: 'WIFI5',
+            //         bluetooth: '4.2v',
+            //         ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 2, Thunderbolt v3 - 2',
+            //         ram: '8GB/16GB/32GB/64GB/128GB',
+            //         ramSlots: '4',
+            //         ssd: 'from 256GB to 2048GB ',
+            //         videoRam: '8GB',
+            //         img: 'https://mzimg.com/big/l1/g1ggtxkjfl1.jpg'
+            //     },
+            //     {
+            //         title: 'Apple iMac 27" 5K 2017',
+            //         resolution: '5120x2880 (16:9) Retina 5K ',
+            //         bright: '500 nits',
+            //         procFirstMod: 'intel XEON W-2140B',
+            //         procSecondMod: 'intel core i7:(10700K)',
+            //         procThirdMod: 'intel core i9:(10910)',
+            //         graphic: 'Radeon Pro Vega 56',
+            //         camera: '1080p FaceTime HD',
+            //         wifi: 'WIFI5',
+            //         bluetooth: '4.2v',
+            //         ports: 'USB 3.2 gen1 - 4, USB C 3.2 gen2 - 4, Thunderbolt v3 - 4',
+            //         ram: '8GB/16GB/32GB/64GB',
+            //         ramSlots: '4',
+            //         ssd: 'from 256GB to 2048gb ',
+            //         videoRam: '8GB',
+            //         img: 'https://m.ua/jpg_zoom1/1127968.jpg'
+            //     },
+            //     {
+            //         title: 'Apple iMac 24" 2021',
+            //         resolution: '4480x2520 (16:9) Retina 4,5K ',
+            //         bright: '500 nits',
+            //         procFirstMod: 'Apple Silicone M1 8 cores',
+            //         // procSecondMod: 'intel core i7:(10700K)',
+            //         // procThirdMod: 'intel core i9:(10910)',
+            //         graphic: 'Apple Silicone M1 7-Core/ M1 8-Core',
+            //         camera: '1080p FaceTime HD',
+            //         wifi: 'WIFI6',
+            //         bluetooth: '5v',
+            //         ports: 'USB4 - 2, Thunderbolt v3 - 2',
+            //         ram: '8GB/16GB',
+            //         ramSlots: '4',
+            //         ssd: 'from 256GB to 2048gb ',
+            //         videoRam: 'Combined memory',
+            //         img: 'https://m.ua/jpg_zoom1/2037928.jpg'
+            //     },
+            //
+            //
+            // ],
             showModal: false,
             selectedProduct: null,
         }
@@ -120,7 +120,8 @@ class Monoblocks extends Component {
 
 
     render() {
-        const {selectedProduct} = this.state
+        const {monoblocs, addToBasket} = this.props
+        const {selectedProduct } = this.state
 
         const Monoblocs = () => {
             return (
@@ -130,7 +131,7 @@ class Monoblocks extends Component {
                     </div>
                     <Container>
                         <main>
-                            {this.state.monobloks.map((item,index) => (
+                            {monoblocs.map((item,index) => (
                                 <MonoblocCard item={item} key={index} />
                             ))}
                         </main>
@@ -196,7 +197,18 @@ class Monoblocks extends Component {
                                 <div className={classes.btnBox}>
                                     <Button size='small'
                                             variant='contained'
-                                            className={classes.addBtn}>Add to cart</Button>
+                                            className={classes.addBtn}
+                                        // onClick={() => this.props.addToOrder(selectedProduct); this.toggleModal() }
+                                            onClick={() => {
+                                                // addToBasket(selectedProduct);
+                                                // this.toggleModal()
+                                                const handleAddToBasket = () => {
+                                                    addToBasket(selectedProduct);
+                                                    this.toggleModal();
+                                                };
+                                                handleAddToBasket();
+                                            }}
+                                    >Add to cart</Button>
                                 </div>
                                 <div className={classes.description}>
                                     <h2 className={classes.desc}>

@@ -109,8 +109,11 @@ class MacMini extends Component {
                                             variant='contained'
                                             className={classes.addBtn}
                                             onClick={() => {
-                                                addToBasket(selectedProduct);
-                                                this.toggleModal()
+                                                const handleAddToBasket = () => {
+                                                    addToBasket(selectedProduct);
+                                                    this.toggleModal();
+                                                };
+                                                 handleAddToBasket();
                                             }}
                                     >Add to cart</Button>
                                 </div>

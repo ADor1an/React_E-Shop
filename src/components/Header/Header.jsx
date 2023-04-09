@@ -29,7 +29,7 @@ import Monoblocks from "../../pages/prdcts/Monoblocks";
 
 
 
-export default function Header ({basket, mMini, macPro, mStudio, monobloks, macbooks, displays,addToBasket, ...props}) {
+export default function Header ({basket, mMini, macPro, mStudio, monoblocs, macbooks, displays,addToBasket, ...props}) {
 
     const [list_menu, setListMenu] = useState(`${classes.menuList} ${classes.unclicked}`)
     const [active_button, setACMenu] = useState(`${classes.dropedMenu} ${classes.notActivated}`)
@@ -211,7 +211,7 @@ export default function Header ({basket, mMini, macPro, mStudio, monobloks, macb
            <Route  path="contacts" element={<Contacts/>}/>
            <Route  path="prdcts/monoblocks" element={<Monoblocks
                basket={basket}
-               monoblocs={monobloks}
+               monoblocs={monoblocs}
                addToBasket={addToBasket}
            />}/>
            <Route   path="prdcts/macpro" element={<MacPro

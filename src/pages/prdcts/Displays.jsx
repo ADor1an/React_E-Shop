@@ -90,7 +90,6 @@ class Displays extends Component {
                         </CardContent>
                         <CardActions>
                             <Button size="small"
-                                    // onClick={() => this.toggleModal(el)}
                                     onClick={() => this.toggleModal(item)}
                             >Learn More
                             </Button>
@@ -126,10 +125,14 @@ class Displays extends Component {
                                     <Button size='small'
                                             variant='contained'
                                             className={classes.addBtn}
-                                            // onClick={() => this.props.addToOrder(selectedProduct); this.toggleModal() }
                                             onClick={() => {
-                                                addToBasket(selectedProduct);
-                                                this.toggleModal()
+                                                // addToBasket(selectedProduct);
+                                                // this.toggleModal()
+                                                const handleAddToBasket = () => {
+                                                    addToBasket(selectedProduct);
+                                                    this.toggleModal();
+                                                };
+                                                handleAddToBasket();
                                             }}
                                     >Add to cart</Button>
                                 </div>

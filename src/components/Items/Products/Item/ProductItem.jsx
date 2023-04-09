@@ -1,11 +1,7 @@
-
-
-
 import React, {Component} from 'react';
 import classes from './ProductItem.module.css'
 import {Button, Card, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
 import {Link, NavLink} from "react-router-dom";
-import Modal from "../../../UI/funcModal/Modal";
 
 class ProductItem extends Component {
     render() {

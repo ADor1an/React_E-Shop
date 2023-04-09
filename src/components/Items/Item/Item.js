@@ -7,12 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import classes from './Item.module.css'
 import Modal from '../../UI/Modal/ModalItem';
-// import Modal from '../../UI/funcModal/Modal';
-
-
-
 class Item extends Component {
-
             // TODO    set this modal scroll on open
              constructor(props) {
                  super(props);
@@ -33,23 +28,15 @@ class Item extends Component {
                       this.setState({selectedProduct: null})
                   }   else    {
                       document.body.style.overflowY = 'hidden'
-
                   }
                   console.log(this.state.selectedProduct)
               }
 
-
-
-
-
     render() {
             const {item, addToBasket} = this.props
             const {selectedProduct} = this.state
-
-
-            const ItemSpec = (props) => {
+            const ItemSpec = (item) => {
                 return (
-
                     <div>
                         <Typography>{item.titleColor}</Typography>
                         <ol>
@@ -65,13 +52,8 @@ class Item extends Component {
                     </div>
                 )
             }
-
-
-
         return (
             <div className={classes.Item}>
-
-
                 <Card sx={{maxWidth: 345}}>
                     <CardMedia
                         className={classes.img}
@@ -106,7 +88,6 @@ class Item extends Component {
                             Learn More
                         </Button>
                     </CardActions>
-
                 </Card>
                 {this.state.showModal &&
                 <Modal
@@ -126,7 +107,13 @@ class Item extends Component {
                             <div className={classes.btnBox}>
                                 <Button size='small'
                                         variant='contained'
-                                        onClick={() => { addToBasket(selectedProduct); this.toggleModal}}
+                                        onClick={() =>  {
+                                            const handleAddToBasket = () => {
+                                                addToBasket(selectedProduct);
+                                                this.toggleModal();
+                                            };
+                                            handleAddToBasket();
+                                        }}
                                         className={classes.addBtn}>Add to cart</Button>
                             </div>
                             <div className={classes.description}>
@@ -139,13 +126,10 @@ class Item extends Component {
                         </div>
                     </div>
                     }
-
                 </Modal>
                 }
-
             </div>
         )
     }
 }
-
 export default Item;

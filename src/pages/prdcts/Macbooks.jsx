@@ -130,9 +130,12 @@ class Macbooks extends Component {
                                         <Button size='small'
                                                 variant='contained'
                                                 onClick={() => {
-                                                    addToBasket(selectedProduct);
-                                                    this.toggleModal()
-                                                } }
+                                                    const handleAddToBasket = () => {
+                                                        addToBasket(selectedProduct);
+                                                        this.toggleModal();
+                                                    };
+                                                    handleAddToBasket();
+                                                }}
                                                 className={classes.addBtn}>Add to cart</Button>
                                     </div>
                                     <div className={classes.description}>
