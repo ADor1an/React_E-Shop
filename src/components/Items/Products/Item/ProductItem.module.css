@@ -1,0 +1,49 @@
+.Item {
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0 ;
+}
+img {
+    transition: all .5s ease-in;
+    /*transform: scale(.7);*/
+    /*height: 45% !important;*/
+    transform: scale(.9);
+}
+.Item img:hover {
+    transform:  scale(1.1);
+}
+
+.Item h2 {
+    font-size: 1.5rem;
+}
+
+.title {
+
+}
+.desc {
+
+}{
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0 ;
+}
+img {
+    transition: all .5s ease-in;
+    /*transform: scale(.7);*/
+    /*height: 45% !important;*/
+    transform: scale(.9);
+}
+.Item img:hover {
+    transform:  scale(1.1);
+}
+
+.Item h2 {
+    font-size: 1.5rem;
+}
+
+.title {
+
+}
+.desc {
+
+}

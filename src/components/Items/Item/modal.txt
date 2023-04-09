@@ -1,0 +1,98 @@
+// class Item extends Component {
+//
+//     render() {
+//
+//
+//
+//
+//             // const [modalActive, setModalActive] = useState(true)
+//
+//         return (
+//             <div className={classes.Item}>
+//                 <Card sx={{ maxWidth: 345}}>
+//                     <CardMedia
+//                         className={classes.img}
+//                         // image={'./img/items/' + this.props.item.img}
+//                         // image={'/static/images/' + this.props.item.img}
+//                         image={this.props.item.img}
+//                         component="img"
+//                         alt={this.props.item.alt}
+//                     />
+//                     <CardContent>
+//                         <Typography gutterBottom variant="h5" component="div">
+//                             <h2 className={classes.title}>{this.props.item.title}</h2>
+//                         </Typography>
+//                         <Typography variant="body2" color="text.secondary">
+//                             <h2 className={classes.desc}>{this.props.item.description}</h2>
+//                         </Typography>
+//                     </CardContent>
+//                     <CardActions>
+//                         <Button size="small" variant="contained" className={classes.openModal}>Learn More</Button>
+//                     </CardActions>
+//
+//
+//                     </Card>
+//
+//                     {/*<ItemModal active={modalActive} setActive={setModalActive}/>*/}
+//
+//             </div>
+//         );
+//     }
+// }
+//
+// export default Item;
+
+
+
+
+
+
+
+
+
+            // class Item extends Component {
+            //     render() {
+            //
+            //         return (
+            //             <div className={classes.Item}>
+            //                 <Card sx={{maxWidth: 345}}>
+            //                     <CardMedia
+            //                         className={classes.img}
+            //                         // image={'./img/items/' + this.props.item.img}
+            //                         // image={'/static/images/' + this.props.item.img}
+            //                         image={this.props.item.img}
+            //                         component='img'
+            //                         alt={this.props.item.alt}
+            //                     />
+            //
+            //                     <CardContent>
+            //                         <Typography gutterBottom variant='h5' component='div'>
+            //                             <h2 className={classes.title}>
+            //                                 {this.props.item.title}
+            //                             </h2>
+            //                         </Typography>
+            //                         <Typography  variant='body2' component='div' color='text.secondary'>
+            //                             <h2 className={classes.desc}>
+            //                                 {this.props.item.title}
+            //                             </h2>
+            //                         </Typography>
+            //                     </CardContent>
+            //                     <CardActions>
+            //                         <Button
+            //                             size='small'
+            //                             variant='contained'
+            //                             className={classes.openModal}>
+            //                             Learn More
+            //                         </Button>
+            //                     </CardActions>
+            //
+            //
+            //                 </Card>
+            //
+            //
+            //             </div>
+            //         )
+            //     }
+            // }
+            //
+            // export default Item;

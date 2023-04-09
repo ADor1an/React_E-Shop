@@ -1,0 +1,43 @@
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.links {
+    height: 65px;
+    width: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.link {
+    /*background-color: yellow !important;*/
+    border-radius: 53% !important;
+    padding: 5px 10px !important;
+}
+.instagram .icon:hover{
+    color: crimson;
+}
+.telegram .icon:hover{
+    /*color: crimson;*/
+}
+.twitter .icon:hover{
+    /*color: crimson;*/
+}
+.facebook .icon:hover{
+    /*color: crimson;*/
+}
+.youtube .icon:hover{
+    color: crimson;
+}
+.icon {
+    height: 40px;
+    width: 40px;
+}
+.link:hover {
+    background: darkblue;
+}
+

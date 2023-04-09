@@ -1,0 +1,109 @@
+.wrap {
+    display: none;
+    /*position: absolute;*/
+    /*top: 2vh;*/
+    /*top: 9vh;*/
+    /*right: 9vw;*/
+    z-index: 1030;
+}
+.hamBox:hover {
+    opacity: 0.7; }
+.hamBox.is-active:hover {
+    opacity: 0.7; }
+.hamBox .hamInner,
+.hamBox .hamInner::before,
+.hamBox .hamInner::after {
+    background-color: #000;
+}
+
+.hamBox.hamWrap {
+    display: flex;
+    justify-content: center;
+    /*padding-top: 100%;*/
+    position: relative;
+}
+.hamWrap {
+    padding: 10px;
+    text-align: center;
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+.hamburger {
+    height: 3em;
+    width: 3em;
+    position: relative;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .2s all;
+    -webkit-tap-highlight-color: transparent;
+}
+.hamburger .hamInner:after {
+    left: 0;
+    top: -1em;
+}
+.hamburger .hamInner:before {
+    right: 0;
+    top: 1em;
+}
+.hamburger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    top: -25%;
+    left: -25%;
+}
+.hamburger .hamInner {
+    top: 50%;
+    margin-top: -0.125em;
+}
+.hamburger .hamInner,
+.hamburger .hamInner:after,
+.hamburger .hamInner:before {
+    pointer-events: none;
+    display: block;
+    content: '';
+    width: 100%;
+    border-radius: 0.25em;
+    background-color: black;
+    height: 0.25em;
+    position: absolute;
+    transform: rotate(0);
+}
+.hamburger.hamSlip .hamInner:after,
+.hamburger.hamSlip .hamInner:before {
+    width: 2em;
+}
+.hamburger.hamSlip .hamInner,
+.hamburger.hamSlip .hamInner:after,
+.hamburger.hamSlip .hamInner:before {
+    transition:  all .2s;
+}
+.hamburger.hamSlip.open .hamInner {
+    transform: translateX(-2em);
+    background-color: transparent;
+}
+.hamburger.hamSlip.open .hamInner:before,
+.hamburger.hamSlip.open .hamInner:after {
+    left: 0.5em;
+    top: 0px;
+}
+.hamburger.hamSlip.open .hamInner:before {
+    transform: translateX(2em) rotate(135deg)
+}
+.hamburger.hamSlip.open .hamInner:after {
+    transform: translateX(2em) rotate(-135deg)
+}
+
+@media screen and (max-width: 768px){
+     .wrap {
+         display: block;
+         /*height: 3em;*/
+         /*width: 3em;*/
+         /*z-index: 100;*/
+         /*position: relative;*/
+         /*top: 5vh;*/
+         /*right: 9vw;*/
+     }
+}

@@ -1,0 +1,197 @@
+.Modal {
+    position: fixed;
+    /*display: flex;*/
+    opacity: 0;
+    /*transform: scale(0) ;*/
+    transform: translateY(-100vh);
+    /*transform: translateY(0);*/
+    transition: all .9s ease-in-out ;
+    z-index: 1030;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /*height: 100vh;*/
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.Modal.open {
+    display: flex;
+    transform: translateY(0);
+    z-index: 1030;
+    height: 100vh;
+    opacity: 1;
+    /*position: fixed;*/
+    /*transform: scale(1);*/
+    /*transition: all .8s ease-out ;*/
+}
+
+/*.Modal.close {*/
+/*    z-index: -100;*/
+/*    transform: translateY(-100vh);*/
+/*    transition: all .8s ease-out ;*/
+
+/*}*/
+
+
+.closeModal {
+    position: absolute !important;
+    display: block;
+    /*top: 5%;*/
+    top: 5%;
+    /*right: 5%;*/
+    right: 2%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% !important;
+    /*opacity: 0;*/
+    /*background-color: black !important;*/
+}
+
+.closeModal > svg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    fill: white;
+    border-radius: 50%;
+    z-index: 1030;
+}
+
+.closeModal > svg:hover {
+    /*fill: gold;*/
+    fill: #61dafb;
+    background-color: black;
+    transform: scale(1.1);
+}
+.active {
+    opacity: 1;
+
+}
+
+
+.ModalBody {
+    position: absolute;
+    display: flex;
+    height: auto;
+    width: 80vw;
+    top: 1%;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    transition: all .5s;
+    /* background-color: burlywood; */
+    overflow-y: scroll;
+
+}
+
+.ModalBody::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+.ModalBody {
+    -ms-overflow-style: none;
+    /*scrollbar-width: none;*/
+}
+
+/*.ModalHead {*/
+/*    position: absolute;*/
+/*    top: 5%;*/
+/*    right: 5%;*/
+/*    left: 5%;*/
+/*    z-index: 100;*/
+/*    transform: scale(1.2);*/
+/*    !*background-color: #525f7f;*!*/
+/*    background-color: aqua;*/
+/*    border-radius: 25px;*/
+/*    width: 70%;*/
+/*    padding: 5px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.ModalCaption {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: wrap;*/
+/*    align-content: space-around;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: stretch;*/
+/*    !*color: black;*!*/
+/*    color: #525f7f;*/
+
+/*}*/
+/*.ModalCaption > p, h2, h3, h4 {*/
+/*    font-size: 25px;*/
+/*    font-weight: 600;*/
+/*}*/
+
+
+
+/*.ModalContent {*/
+/*    position: absolute;*/
+/*    top: 5%;*/
+/*    right: 0;*/
+/*    margin-top: 10px;*/
+/*    padding: 20px;*/
+/*    border-radius: 15px;*/
+/*    background: aqua;*/
+/*    height: auto;*/
+/*    width: 80vw;*/
+/*    !*overflow-y: scroll;*!*/
+/*}*/
+/*.ModalContent img {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 60vh;*/
+/*    width: 100%;*/
+/*    border-radius: 15px;*/
+/*    !*transition: scale ;*!*/
+/*    transition: all .5s ease-in;*/
+/*}*/
+/*.ModalContent img:hover {*/
+/*    !*border-radius: 15px;*!*/
+
+/*}*/
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5vh 3vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: black;
+    align-content: flex-start;
+}
+
+/*.specsList {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: nowrap;*/
+/*    align-content: space-between;*/
+/*    justify-content: center;*/
+/*    align-items: flex-start;*/
+/*    text-decoration-color: black;*/
+/*}*/
+.title {
+
+}
+.desc {
+
+}
+.wrap {
+
+}
+
+@media screen and (max-width: 768px) {
+    .closeModal {
+        top: 70vh;
+        height: 50px;
+        width: 50px;
+        right: 0;
+    }
+}

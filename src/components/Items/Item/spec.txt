@@ -1,0 +1,71 @@
+// return but all
+//        const  specs = [
+//            {
+//
+//                id: 1,
+//                titleColor: 'Color',
+//                colorFirst: 'Silver',
+//                colorSecond: 'Space Gray',
+//                titleChips: 'Chips',
+//                chipF: '8-core CPU with 6 performance cores and 2 efficiency cores',
+//                chipT: '14-core GPU',
+//                chipTh: '16-core Neural Engine',
+//            },
+//            {
+//                id: 2,
+//                titleColor: 'Color',
+//                colorFirst: 'Silver',
+//                colorSecond: 'Space Gray',
+//                titleChips: 'Chips',
+//                chipF: '8-core CPU with 6 performance cores and 2 efficiency cores',
+//                chipT: '14-core GPU',
+//                chipTh: '16-core Neural Engine',
+//            },
+//            {
+//                id: 3,
+//                titleColor: 'Color',
+//                colorFirst: 'Silver',
+//                colorSecond: 'Space Gray',
+//                titleChips: 'Chips',
+//                chipF: '8-core CPU with 6 performance cores and 2 efficiency cores',
+//                chipT: '14-core GPU',
+//                chipTh: '16-core Neural Engine',
+//            },
+//            {
+//                id: 4,
+//                titleColor: 'Color',
+//                colorFirst: 'Silver',
+//                colorSecond: 'Space Gray',
+//                titleChips: 'Chips',
+//                chipF: '8-core CPU with 6 performance cores and 2 efficiency cores',
+//                chipT: '14-core GPU',
+//                chipTh: '16-core Neural Engine',
+//            },
+//
+//        ]
+//
+// const Speck = (props) => {
+//     return (
+//         <div>
+//             <Typography>{props.titleColor}</Typography>
+//             <ol>
+//                 <li>{props.colorFirst}</li>
+//                 <li>{props.colorSecond}</li>
+//             </ol>
+//             <Typography>{props.titleChips}</Typography>
+//             <ol>
+//                 <li>{props.chipF}</li>
+//                 <li>{props.chipT}</li>
+//                 <li>{props.chipTh}</li>
+//             </ol>
+//         </div>
+//     );
+// }
+// const NSpeck = specs.map(item => (
+//     <Speck
+//         titleColor={item.titleColor}
+//         colorFirst={item.colorFirst}
+//         colorSecond={item.colorSecond}
+//     />
+// ))
+        // return but all

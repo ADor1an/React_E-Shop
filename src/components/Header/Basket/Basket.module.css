@@ -1,0 +1,62 @@
+.basket {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 10vh 10vw;
+
+    z-index: 1030;
+    opacity: 1;
+}
+.body {
+    position: absolute;
+    background: rgba(169, 169, 169, 0.37);
+    width: 80vw;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+}
+.open {
+    z-index: 1030;
+    opacity: 1;
+    height: 100%;
+}
+
+.hide {
+    position: absolute !important;
+    display: block;
+    /*top: 5%;*/
+    top: 5%;
+    /*right: 5%;*/
+    right: 5%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% !important;
+}
+
+
+.hide > svg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    fill: white;
+    border-radius: 50%;
+    z-index: 1030;
+}
+
+.hide > svg:hover {
+    /*fill: gold;*/
+    fill: #61dafb;
+    background-color: black;
+    transform: scale(1.1);
+}

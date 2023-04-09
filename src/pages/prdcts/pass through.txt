@@ -1,0 +1,66 @@
+import React from 'react';
+import { Route } from 'react-router-dom';
+
+class ClassComponent1 extends React.Component {
+  state = { someState: 'state from class component 1' };
+
+  render() {
+    return (
+      <div>
+        <FunctionalComponent state={this.state} />
+      </div>
+    );
+  }
+}
+
+const FunctionalComponent = ({ state }) => {
+  return (
+    <Route
+      path="/class2"
+      render={({ history }) => (
+        <ClassComponent2
+          history={history}
+          state={state}
+        />
+      )}
+    />
+  );
+};
+
+class ClassComponent2 extends React.Component {
+  componentDidMount() {
+    console.log(this.props.state);
+  }
+
+  render() {
+    return <div>Class Component 2</div>;
+  }
+}
+
+
+
+
+
+
+function toggleDropdown(id) {
+  // Get all dropdown buttons and dropdown menus on the page
+  let dropdownButtons = document.querySelectorAll('.dropdown-button');
+  let dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+  // Loop through all dropdown buttons and dropdown menus
+  for (let i = 0; i < dropdownButtons.length; i++) {
+    let dropdownButton = dropdownButtons[i];
+    let dropdownMenu = dropdownMenus[i];
+
+    // If the current dropdown button is the one that was clicked
+    if (dropdownButton.id === id) {
+      // Show the corresponding dropdown menu and set the aria-expanded attribute to true
+      dropdownMenu.style.display = "block";
+      dropdownButton.setAttribute("aria-expanded", "true");
+    } else {
+      // Otherwise, hide the dropdown menu and set the aria-expanded attribute to false
+      dropdownMenu.style.display = "none";
+      dropdownButton.setAttribute("aria-expanded", "false");
+    }
+  }
+}

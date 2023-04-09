@@ -1,0 +1,138 @@
+
+const modalForItem = props => {
+
+    return (
+
+        <>
+
+            <div className={`{classes.ModalOverlay} ${props.isOpened} ? {classes.open} : {classes.close}`} style={{...props.style}}>
+                <div classname={classes.ModalBody}>
+                    <div className={classes.ModalHead}>
+                        <Typography className={classes.ModalCaption}>
+                           {/*<h2> {props.item.title} </h2>*/}
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </Typography>
+                    </div>
+                    <div className={classes.ModalContent}>
+                        {props.children}
+                    </div>
+
+
+                </div>
+
+                <Button
+                    className={classes.closeFModal}
+                    onClick={props.onModalClose}
+                >
+                    <BsXCircle/>
+                </Button>
+            </div>
+        </>
+
+    )
+
+}
+
+export default modalForItem;
+
+
+
+
+
+
+<ul>
+                        <Typography>Finish</Typography>
+                        <li>
+                            <p>{this.props.item.specs.colors.fColors}</p>
+                        </li> <li>
+                        <p>{this.props.item.specs.colors.sColors}</p>
+                    </li>
+                        <Typography> Chip
+                            Apple M1 Pro chip</Typography>
+                        <li>
+                            <p>{this.props.item.chips.fVariant}</p>
+                        </li>
+                        <li>
+                            <p>{this.props.item.chips.sVariant}</p>
+                        </li>
+                        <li>
+                            <p>{this.props.item.chips.tVariant}</p>
+                        </li>
+                        <li>
+                            <p>Media engine</p>
+                            <ul className={classes.video}>
+
+                                <li>
+                                    <p>Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW</p>
+                                </li>
+                                <li>
+                                    <p>Video decode engine</p>
+                                </li>
+                                <li>
+                                    <p>Video encode engine</p>
+                                </li>
+                                <li>
+                                    <p>ProRes encode and decode engine</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <Typography>Liquid Retina XDR display</Typography>
+                        <li>
+                            <p> 14.2-inch (diagonal) Liquid Retina XDR display;1 3024-by-1964 native resolution at 254 pixels per inch
+                                XDR (Extreme Dynamic Range)
+                            </p>
+                        </li>
+                        <li>
+                            <p> 1,000,000:1 contrast ratio
+                            </p>
+                        </li>
+                        <li>
+                            <p>   XDR brightness: 1000 nits sustained full-screen, 1600 nits peak2 (HDR content only)
+                            </p>
+                        </li>
+                        <li>
+                            <p>  SDR brightness: 500 nits
+                            </p>
+                        </li>
+                        <Typography>Color</Typography>
+                        <li>
+                            <p>   1 billion colors
+                            </p>
+                        </li>
+                        <li>
+                            <p>   Wide color (P3)
+                            </p>
+                        </li>
+                        <li>
+                            <p>  True Tone technology
+                            </p>
+                        </li>
+                        <li>
+                            <p> True Tone technology
+
+                            </p>
+                        </li>
+                        <Typography>Refresh rates</Typography>
+                        <li>
+                            <p>  ProMotion technology for adaptive refresh rates up to 120Hz
+                            </p>
+                        </li>
+                        <li>
+                            <p>     Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz
+                            </p>
+                        </li>
+                        <Typography>Memory</Typography>
+                        <li>
+                            <p> 16GB unified memory</p>
+                        </li>
+                        <li>
+                            <p>Configurable to 32GB (M1 Pro or M1 Max) or 64GB (M1 Max)</p>
+                        </li>
+                        <Typography>Storage</Typography>
+                        <li>
+                            <p>512GB SSD</p>
+                        </li>
+                        <li>
+                            <p> Configurable to 1TB, 2TB, 4TB, or 8TB</p>
+                        </li>
+                    </ul>

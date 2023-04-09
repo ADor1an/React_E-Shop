@@ -1,0 +1,127 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1030;
+    /*color: black;*/
+    transform: translateY(-100vh);
+    transition: all .8s ease-out ;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /*top: 0;*/
+    /*right: 0;*/
+
+
+
+    @media screen and (max-width: 768px) {
+
+    }
+    /*left: 0;*/
+    /*bottom: 0;*/
+    z-index: 1020;
+    transform: translateY(0px);
+    background-color: rgba(0, 0, 0, .8);
+    width: 100vw;
+    height: auto;
+    padding: 0 10vw;
+
+
+
+}
+
+
+.Modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    width: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*justify-content: center;*/
+    /*align-items: stretch;*/
+
+    /*position: fixed;*/
+
+    transition: all .8s ease-out ;
+    color: white;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+
+
+}
+
+.open {
+    z-index: 1030;
+    /*position: fixed;*/
+    display: flex;
+    /*transform: translateY(0px);*/
+    /*transform: scale(1);*/
+
+    width: 100vw;
+    height: 100vh;
+    /*background: rgba(0, 0, 0, .8);*/
+
+}
+
+.close {
+    z-index: -100;
+}
+
+.ModalBody {
+
+}
+
+.closeModal {
+    position: absolute !important;
+    display: block;
+    /*top: 5%;*/
+    top: 13%;
+    /*right: 5%;*/
+    right: 2%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% !important;
+    /*background-color: black !important;*/
+}
+
+.closeModal > svg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    fill: white;
+    border-radius: 50%;
+    z-index: 1030;
+}
+
+.closeModal > svg:hover {
+    fill: gold;
+    background-color: black;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .closeModal {
+        top: 70vh;
+        height: 50px;
+        width: 50px;
+        right: 0;
+    }
+}
+@media screen and (max-width: 430px) {
+    .closeModal {
+        top: 93vh;
+        height: 50px;
+        width: 50px;
+        right: 40vw;
+    }
+}

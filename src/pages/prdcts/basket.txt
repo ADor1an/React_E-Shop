@@ -1,0 +1,56 @@
+import React, { useState } from 'react';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      fruits: ['apple', 'banana', 'orange'],
+      vegetables: ['carrot', 'lettuce', 'potato'],
+      basket: []
+    };
+
+    this.addToBasket = this.addToBasket.bind(this);
+  }
+
+  addToBasket(item) {
+    this.setState(prevState => ({
+      basket: [...prevState.basket, item]
+    }));
+  }
+
+  render() {
+    const { fruits, vegetables, basket } = this.state;
+
+    return (
+      <div>
+        <h1>Fruits:</h1>
+        <ul>
+          {fruits.map((fruit, index) => (
+            <li key={index} onClick={() => this.addToBasket(fruit)}>
+              {fruit}
+            </li>
+          ))}
+        </ul>
+
+        <h1>Vegetables:</h1>
+        <ul>
+          {vegetables.map((vegetable, index) => (
+            <li key={index} onClick={() => this.addToBasket(vegetable)}>
+              {vegetable}
+            </li>
+          ))}
+        </ul>
+
+        <h1>Basket:</h1>
+        <ul>
+          {basket.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+}
+
+export default App;

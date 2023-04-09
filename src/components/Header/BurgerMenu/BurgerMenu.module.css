@@ -1,0 +1,101 @@
+.wrap {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    height: 5em;
+    width: 100%;
+    background-color: rgb(37, 39, 53);
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+}
+.burgerMenu {
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    /*background-color: crimson;*/
+}
+
+.burger {
+    width: 4em;
+    height: 0.5em;
+    background-color: #61dafb;
+    border-radius: 0.5em;
+}
+
+/*.burger:nth-child(1) {*/
+/*    width: 2em;*/
+/*}*/
+
+/*.burger:nth-child(2) {*/
+/*    position: absolute;*/
+/*    top: 36px;*/
+/*}*/
+
+/*.burger:nth-child(3) {*/
+/*    width: 2em;*/
+/*    position: absolute;*/
+/*    left: 48px;*/
+/*    top: 56px;*/
+/*}*/
+
+.menu {
+    height: 100vh;
+    width: 50%;
+    background-color: #61dafb;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.visible {
+    display: inherit;
+}
+
+.hidden {
+    display: none;
+}
+/*animate*/
+/*clicked*/
+
+.burger.clicked {
+
+}
+.burger.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out .5s;
+    width: 4em;
+}
+
+.burger.clicked:nth-child(2) {
+    transform: scale(0.01);
+    transition: ease-out .5s;
+}
+
+.burger.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out .5s;
+    width: 4em;
+}
+/*clicked*/
+
+
+/*unclicked*/
+
+.burger.uncliked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+
+/*unclicked*/
+
+/*animate*/
+

@@ -1,0 +1,476 @@
+.headerWrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 20px 25px; */
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: all .5s ease-in;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1020;
+    /*z-index: 98;*/
+}
+/*.logo a {*/
+/*    text-decoration: none;*/
+/*    color: black;*/
+/*    text-transform: uppercase;*/
+/*    font-size: 25px;*/
+/*    transition: all .5s ease-in;*/
+/*    padding: 5px 15px;*/
+/*    font-weight: bold;*/
+/*    border-radius: 5px;*/
+/*    z-index: 1030;*/
+/*}*/
+
+/*.logo a:hover {*/
+/*    background: black;*/
+/*    color: #61dafb;*/
+/*    transform: scale(1.2);*/
+/*}*/
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+.logo:hover a {
+    color: #61dafb;
+
+}
+
+.logo:hover {
+    background: black;
+    color: #61dafb;
+    transform: scale(1.2);
+    /*color: #72b7c7;*/
+
+}
+
+
+.menuLink {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+header nav  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.menuItem a {
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 600ms ease, scale 300ms ease-in-out;
+}
+
+li.menuItem a:hover {
+    /*color: black;*/
+    color: #61dafb;
+    /*background-color: yellow;*/
+    background-color: black;
+
+    border-radius: 5px;
+    opacity: 0.7;
+    transform: scale(1.4);
+}
+
+
+.menuLink {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 1rem;
+}
+
+
+
+/*dropMenu*/
+.dropdown {
+    position: relative;
+}
+.dropdownMenu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+    -webkit-animation: none;
+    animation: none;
+}
+.dropdown .dropdownMenu::before {
+    /*background: #61dafb ;*/
+    background: #000 ;
+    box-shadow: none;
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    /*left: 5px;*/
+    /*right: 25%;*/
+    /*top: -40px;*/
+    top: -20px;
+    right: 21%;
+    position: absolute;
+    bottom: 100%;
+    transform: rotate(-45deg) translateY(1rem);
+    z-index: -5;
+    border-radius: .2rem;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    /*left: 0;*/
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #525f7f;
+    text-align: left;
+    list-style: none;
+    background-color: #61dafb;
+    background-clip: padding-box;
+    border: 0 solid rgba(0,0,0,.15);
+    border-radius: .3rem;
+    box-shadow: 0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%), 0 5px 15px rgb(0 0 0 / 10%);
+}
+
+nav .menuList .dropdownMenu {
+    position: absolute;
+}
+
+.menuItem.dropdown:hover .dropdownMenu {
+    /*position: absolute;*/
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    /*visibility: visible;*/
+    transform: translate(0);
+    -webkit-animation: none;
+    animation: none;
+}
+
+.dropdownLink {
+    display: block;
+    /*width: 100%;*/
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+/*dropMenu*/
+
+
+
+.menuItem a {
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 600ms ease, scale 300ms ease-in-out;
+}
+
+
+
+
+
+.menuItem Button {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px 20px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+
+    /*transition: opacity 600ms ease, scale 300ms ease-in-out;*/
+}
+
+.menuItem Button:hover {
+    /*background-color: yellow;*/
+    background: black;
+    /*color: #61dafb;*/
+    border-radius: 5px;
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+Button.basketBtn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    background: none;
+    transition: all .2s
+}
+.basketIcon  {
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+
+.menuItem Button:hover .basketIcon {
+    /*fill: #fff;*/
+    fill: #61dafb;
+}
+
+
+/*presentation */
+.presentation {
+    margin: 25px 0;
+    /*background-image: url("./images/macbook_pro_main.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*background-size: cover;*/
+    /*background-blend-mode: multiply;*/
+    /*background-color: #61dafba1;*/
+    /*background-color: #61fbd0a1;*/
+    width: 100%;
+    /*height: 80vh;*/
+}
+
+
+
+/*presentation */
+
+
+.dropedMenu {
+    height: 4em;
+    width: 4em;
+    position: relative !important;
+    top: 0vh;
+    right: 0vw;
+}
+
+.basketWrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5vh 5vw;
+}
+
+.basketList {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px 20px;
+    width: 100%;
+    /*height: 20vh;*/
+
+}
+.basketItem {
+    background-color: #525f7f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1vh 0;
+    margin: 6px;
+    border-radius: 25px;
+
+}
+
+.itemImg {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+}
+
+.countWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    /* padding: 1vh 5vw; */
+    margin: 0 5vw;
+}
+.countBtn {
+    height: 60px;
+    width: 60px;
+}
+.plus {
+    width: 40px;
+    height: 40px;
+}
+.plus:hover{
+  fill: greenyellow;
+}
+.minus {
+    width: 40px;
+    height: 40px;
+}
+.minus:hover {
+    fill: red;
+}
+.count {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .menuList {
+        transition: all .8s ease-out ;
+        transform: translateY(-100vh);
+        /*display: none;*/
+        /*visibility: hidden;*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: center;
+        justify-content: center;
+        background: crimson;
+        padding: 0 40vw 0 0;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0vh;
+        left: 0vw;
+        z-index: -1030;
+
+    }
+    .headerWrapper {
+        max-width: 100vw;
+        width: 90vw;
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+
+
+
+    /*.menuList.unclicked {*/
+        /*z-index: -1030;*/
+
+    /*}*/
+
+    .menuList.clicked {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: center;
+        justify-content: center;
+        visibility: visible;
+        /*height: 100vh;*/
+        /*width: 100vw;*/
+        z-index: 1010;
+        transform: translateY(0vh);
+    }
+
+    .menuItem  {
+        padding: 10px 5px;
+    }
+    .menuItem a {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    nav .menuList .dropdownMenu {
+        /*position: fixed;*/
+        /*top: 17%;*/
+        /*left: 59%;*/
+        position: absolute;
+        top: 0;
+        left: 95%;
+    }
+    .dropdown .dropdownMenu:before {
+        left: 0;
+        right: 0;
+        top: 12px;
+        /*left: -35px;*/
+        /*right: 0;*/
+    }
+
+    .presentation {
+        margin: 5px auto;
+
+    }
+    .dropedMenu {
+        height: 4em;
+        width: 4em;
+        position: absolute !important;
+        top: 0.9em;
+        right: 4vw;
+    }
+    .dropedMenu .notActivated {
+        height: 2em;
+        width: 2em;
+    }
+    .dropdownMenu .dropdownLink {
+        font-size: 16px;
+    }
+
+    /*.dropedMenu.notActivated {*/
+
+    /*}*/
+    header nav {
+        padding-right: 1vw;
+        padding-left: 1vw;
+
+    }
+}
+
+
+
+
+/*Basket*/
+
+
+/*Basket*/

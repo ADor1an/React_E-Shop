@@ -1,0 +1,6 @@
+// import mbp from '../../images/carousel/MB_pro_13_m1.jpg'
+// import mbp1 from '../../images/carousel/MB_pro_m1.jpg'
+// import mbpm14 from '../../images/carousel/MB_pro_14_m1.jpg'
+// import mbpm16 from '../../images/carousel/MB_pro_16_m1.jpg'
+// import mbp16 from '../../images/carousel/MB_pro_16.jpg'
+// import mba from '../../images/carousel/MB_air_m1.jpg'
