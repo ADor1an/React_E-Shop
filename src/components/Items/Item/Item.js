@@ -66,47 +66,10 @@ class Item extends Component {
                 )
             }
 
-            // const MacbookCard = ({item}) => {
-            //     <Card sx={{maxWidth: 345}}>
-            //         <CardMedia
-            //             className={classes.img}
-            //             // image={'./img/items/' + this.props.item.img}
-            //             // image={'/static/images/' + this.prop s.item.img}
-            //             image={item.img}
-            //             component='img'
-            //             alt={item.alt}
-            //         />
-            //         <CardContent>
-            //             <Typography gutterBottom variant='h5' component='div'>
-            //                 <h2 className={classes.title}>
-            //                     {item.title}
-            //                 </h2>
-            //             </Typography>
-            //             <Typography  variant='body2' component='div'
-            //                 // color='text.secondary'
-            //             >
-            //                 <h2 className={classes.desc}>
-            //                     {item.description}
-            //                 </h2>
-            //             </Typography>
-            //         </CardContent>
-            //         <CardActions>
-            //             <Button
-            //                 size='small'
-            //                 variant='contained'
-            //                 // className={classes.openModal}
-            //                 // onClick={this.state}
-            //                 onClick={this.toggleModal}
-            //             >
-            //                 Learn More
-            //             </Button>
-            //         </CardActions>
-            //
-            //     </Card>
-            // }
+
 
         return (
-            <div className={cls}>
+            <div className={classes.Item}>
 
 
                 <Card sx={{maxWidth: 345}}>
