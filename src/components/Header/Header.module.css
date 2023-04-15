@@ -64,6 +64,7 @@ header nav  {
     justify-content: space-around;
 }
 .menuItem a {
+    color: #222;
     text-decoration: none;
     margin: 0 1rem;
     padding: 10px 15px;
@@ -336,6 +337,7 @@ Button.basketBtn {
         padding: 10px 5px;
     }
     .menuItem a {
+        color: rgb(85, 26, 139);
         font-size: 25px;
         font-weight: 900;
     }
