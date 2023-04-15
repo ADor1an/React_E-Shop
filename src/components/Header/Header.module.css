@@ -4,8 +4,8 @@
     width: 80vw;
     display: flex;
     justify-content: space-around;
-    /* padding: 20px 25px; */
 }
+/*logo*/
 .logo {
     text-transform: uppercase;
     font-size: 25px;
@@ -14,25 +14,8 @@
     font-weight: bold;
     border-radius: 5px;
     z-index: 1020;
-    /*z-index: 98;*/
 }
-/*.logo a {*/
-/*    text-decoration: none;*/
-/*    color: black;*/
-/*    text-transform: uppercase;*/
-/*    font-size: 25px;*/
-/*    transition: all .5s ease-in;*/
-/*    padding: 5px 15px;*/
-/*    font-weight: bold;*/
-/*    border-radius: 5px;*/
-/*    z-index: 1030;*/
-/*}*/
 
-/*.logo a:hover {*/
-/*    background: black;*/
-/*    color: #61dafb;*/
-/*    transform: scale(1.2);*/
-/*}*/
 
 .logo a {
     text-decoration: none;
@@ -50,18 +33,12 @@
     /*color: #72b7c7;*/
 
 }
-
+/*logo*/
 
 .menuLink {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
-
-
-
-
-
 header nav  {
     width: 100%;
     display: flex;
@@ -73,7 +50,6 @@ header nav  {
     align-content: center;
     align-items: center;
 }
-
 .menuList {
     display: flex;
     flex-direction: row;
@@ -81,7 +57,6 @@ header nav  {
     justify-content: space-around;
     list-style-type: none;
 }
-
 .menuItem {
     display: flex;
     flex-direction: column;
@@ -106,16 +81,11 @@ li.menuItem a:hover {
     opacity: 0.7;
     transform: scale(1.4);
 }
-
-
 .menuLink {
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 1rem;
 }
-
-
-
 /*dropMenu*/
 .dropdown {
     position: relative;
@@ -148,7 +118,6 @@ li.menuItem a:hover {
     z-index: -5;
     border-radius: .2rem;
 }
-
 .dropdownMenu {
     position: absolute;
     top: 100%;
@@ -169,11 +138,9 @@ li.menuItem a:hover {
     border-radius: .3rem;
     box-shadow: 0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%), 0 5px 15px rgb(0 0 0 / 10%);
 }
-
 nav .menuList .dropdownMenu {
     position: absolute;
 }
-
 .menuItem.dropdown:hover .dropdownMenu {
     /*position: absolute;*/
     display: block;
@@ -184,7 +151,6 @@ nav .menuList .dropdownMenu {
     -webkit-animation: none;
     animation: none;
 }
-
 .dropdownLink {
     display: block;
     /*width: 100%;*/
@@ -198,33 +164,21 @@ nav .menuList .dropdownMenu {
     border: 0;
 }
 
-
-
 /*dropMenu*/
-
-
-
 .menuItem a {
     text-decoration: none;
     padding: 10px 15px;
     cursor: pointer;
     transition: opacity 600ms ease, scale 300ms ease-in-out;
 }
-
-
-
-
-
 .menuItem Button {
     text-decoration: none;
     padding: 10px 15px;
     margin: 5px 20px;
     cursor: pointer;
     transition: all .5s ease-in;
-
     /*transition: opacity 600ms ease, scale 300ms ease-in-out;*/
 }
-
 .menuItem Button:hover {
     /*background-color: yellow;*/
     background: black;
@@ -233,7 +187,6 @@ nav .menuList .dropdownMenu {
     opacity: 0.7;
     transform: scale(1.2);
 }
-
 Button.basketBtn {
     position: relative;
     display: flex;
@@ -254,40 +207,19 @@ Button.basketBtn {
     height: 30px;
     color: black;
 }
-
 .menuItem Button:hover .basketIcon {
     /*fill: #fff;*/
     fill: #61dafb;
 }
 
-
-/*presentation */
-.presentation {
-    margin: 25px 0;
-    /*background-image: url("./images/macbook_pro_main.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center center;*/
-    /*background-size: cover;*/
-    /*background-blend-mode: multiply;*/
-    /*background-color: #61dafba1;*/
-    /*background-color: #61fbd0a1;*/
-    width: 100%;
-    /*height: 80vh;*/
-}
-
-
-
-/*presentation */
-
-
 .dropedMenu {
+    display: none !important;
     height: 4em;
     width: 4em;
     position: relative !important;
     top: 0vh;
     right: 0vw;
 }
-
 .basketWrap {
     display: flex;
     flex-direction: column;
@@ -297,7 +229,6 @@ Button.basketBtn {
     margin: 0 auto;
     padding: 5vh 5vw;
 }
-
 .basketList {
     display: flex;
     justify-content: center;
@@ -307,7 +238,6 @@ Button.basketBtn {
     padding: 20px 20px;
     width: 100%;
     /*height: 20vh;*/
-
 }
 .basketItem {
     background-color: #525f7f;
@@ -318,15 +248,12 @@ Button.basketBtn {
     padding: 1vh 0;
     margin: 6px;
     border-radius: 25px;
-
 }
-
 .itemImg {
     width: 20vw;
     height: 20vh;
     border-radius: 25px;
 }
-
 .countWrap {
     display: flex;
     flex-direction: column;
@@ -362,9 +289,7 @@ Button.basketBtn {
     font-size: 25px;
 }
 
-
 @media screen and (max-width: 768px) {
-
     .menuList {
         transition: all .8s ease-out ;
         transform: translateY(-100vh);
@@ -384,7 +309,6 @@ Button.basketBtn {
         top: 0vh;
         left: 0vw;
         z-index: -1030;
-
     }
     .headerWrapper {
         max-width: 100vw;
@@ -392,14 +316,9 @@ Button.basketBtn {
         margin: 0 auto;
         padding: 10px 10px;
     }
-
-
-
     /*.menuList.unclicked {*/
         /*z-index: -1030;*/
-
     /*}*/
-
     .menuList.clicked {
         display: flex;
         flex-direction: column;
@@ -413,7 +332,6 @@ Button.basketBtn {
         z-index: 1010;
         transform: translateY(0vh);
     }
-
     .menuItem  {
         padding: 10px 5px;
     }
@@ -421,7 +339,7 @@ Button.basketBtn {
         font-size: 25px;
         font-weight: 900;
     }
-
+    /*dropdown*/
     nav .menuList .dropdownMenu {
         /*position: fixed;*/
         /*top: 17%;*/
@@ -437,17 +355,18 @@ Button.basketBtn {
         /*left: -35px;*/
         /*right: 0;*/
     }
-
+    /*dropdown*/
     .presentation {
         margin: 5px auto;
-
     }
     .dropedMenu {
+        display: block !important;
         height: 4em;
         width: 4em;
         position: absolute !important;
         top: 0.9em;
         right: 4vw;
+        z-index: 1030;
     }
     .dropedMenu .notActivated {
         height: 2em;
@@ -456,21 +375,10 @@ Button.basketBtn {
     .dropdownMenu .dropdownLink {
         font-size: 16px;
     }
-
     /*.dropedMenu.notActivated {*/
-
     /*}*/
     header nav {
         padding-right: 1vw;
         padding-left: 1vw;
-
     }
 }
-
-
-
-
-/*Basket*/
-
-
-/*Basket*/

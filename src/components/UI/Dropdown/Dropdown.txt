@@ -1,0 +1,148 @@
+import React, { useState } from 'react';
+import classes from './Dropdown.module.css';
+import {
+  Link,
+  NavLink
+} from 'react-router-dom';
+
+const Dropdown = ({ title, links }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleDropdownClick = () => {
+    if (window.innerWidth <= 768) {
+      setIsOpen(!isOpen);
+    }
+  };
+
+  return (
+    <div className={classes.dropdown}>
+      <button className={classes.dropdownBtn} onClick={handleDropdownClick}>
+        {title}
+      </button>
+      <div className={`${classes.dropdownMenu} ${isOpen ? classes.active : ''}`}>
+        {links.map((link, index) => (
+          <NavLink
+            key={link.path}
+            to={link.path}
+            className={classes.dropdownLink}
+            onClick={() => setIsOpen(false)}
+          >
+            {link.label}
+          </NavLink>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Dropdown;
+
+
+
+styles
+
+
+.dropdown {
+    position: relative;
+}
+.dropdownMenu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+    -webkit-animation: none;
+    animation: none;
+}
+.dropdown .dropdownMenu::before {
+    /*background: #61dafb ;*/
+    background: #000 ;
+    box-shadow: none;
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    /*left: 5px;*/
+    /*right: 25%;*/
+    /*top: -40px;*/
+    top: -20px;
+    right: 21%;
+    position: absolute;
+    bottom: 100%;
+    transform: rotate(-45deg) translateY(1rem);
+    z-index: -5;
+    border-radius: .2rem;
+}
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    /*left: 0;*/
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #525f7f;
+    text-align: left;
+    list-style: none;
+    background-color: #61dafb;
+    background-clip: padding-box;
+    border: 0 solid rgba(0,0,0,.15);
+    border-radius: .3rem;
+    box-shadow: 0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%), 0 5px 15px rgb(0 0 0 / 10%);
+}
+nav .menuList .dropdownMenu {
+    position: absolute;
+}
+.menuItem.dropdown:hover .dropdownMenu {
+    /*position: absolute;*/
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    /*visibility: visible;*/
+    transform: translate(0);
+    -webkit-animation: none;
+    animation: none;
+}
+.dropdownLink {
+    display: block;
+    /*width: 100%;*/
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+
+    nav .menuList .dropdownMenu {
+        /*position: fixed;*/
+        /*top: 17%;*/
+        /*left: 59%;*/
+        position: absolute;
+        top: 0;
+        left: 95%;
+    }
+    .dropdown .dropdownMenu:before {
+        left: 0;
+        right: 0;
+        top: 12px;
+        /*left: -35px;*/
+        /*right: 0;*/
+    }
+
+    notes::
+
+    .Dropdown_dropdown__bAzYV .Dropdown_dropdownMenu__okrBV {
+        position: absolute;
+        /* left: 95%; */
+        left: 87%;
+        /* top: 20%; */
+        top: -100%;
+        /* padding: 10px 10px; */
+    }

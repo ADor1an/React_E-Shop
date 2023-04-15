@@ -1,4 +1,7 @@
-.dropdown {
+button {
+}
+
+.dropdown{
     margin: 0 5px 0 5px;
     position: relative;
     display: flex;
@@ -8,9 +11,8 @@
     text-decoration: none;
     cursor: pointer;
     transition: opacity 600ms ease, scale 300ms ease-in-out;
-}
 
-/*dropdownBtn*/
+}
 
 .dropdownBtn {
     display: flex;
@@ -46,7 +48,6 @@
     cursor: pointer;
     transition: opacity 600ms ease, scale 300ms ease-in-out;
 }
-
 .dropdown .dropdownBtn:hover,
 .dropdown .dropdownBtn:hover {
     /* color: black; */
@@ -57,9 +58,6 @@
     opacity: 0.7;
     transform: scale(1.4);
 }
-/*dropdownBtn*/
-
-/*dropdownMenu*/
 .dropdownMenu {
     position: absolute;
     top: 100%;
@@ -73,8 +71,8 @@
     color: #525f7f;
     text-align: left;
     list-style: none;
-    /*background-color: #61dafb;*/
-    background-color: #61dafb61;
+    background-color: #61dafb;
+    /*background-color: #61dafb61;*/
     background-clip: padding-box;
     border: 0 solid rgba(0,0,0,.15);
     border-radius: .3rem;
@@ -88,7 +86,7 @@
     display: block;
     opacity: 1;
     pointer-events: auto;
-    visibility: visible;
+     visibility: visible;
     transform: translate(0);
     /*animation: none;*/
 }
@@ -112,9 +110,6 @@
     z-index: -5;
     border-radius: .2rem;
 }
-/*dropdownMenu*/
-
-/*dropdownLink*/
 .dropdownLink {
     display: block;
     padding: .25rem 1.5rem;
@@ -127,8 +122,12 @@
     border: 0;
     text-decoration: none;
     font-size: 16px;
+    /*padding: 10px 15px;*/
     letter-spacing: normal;
     transition: opacity 600ms ease, scale 300ms ease-in-out;
+    /* width: 100%; */
+
+    /* width: 100%; */
 }
 .dropdownLink:hover {
     background-color: black;
@@ -137,10 +136,9 @@
     opacity: 0.7;
     transform: scale(1.4);
 }
-/*dropdownLink*/
+
 
 @media screen and (max-width: 768px) {
-
     .dropdown {
         padding: 10px 15px;
     }
@@ -148,6 +146,15 @@
         color: rgb(85, 26, 139);
         font-size: 25px;
         font-weight: 900;
+    }
+
+    .activeDropBtn {
+        color: #61dafb;
+        /* background-color: yellow; */
+        background-color: black;
+        border-radius: 5px;
+        opacity: 0.7;
+        transform: scale(1.4);
     }
     .dropdownMenu {
         opacity: 0;

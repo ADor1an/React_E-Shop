@@ -42,6 +42,7 @@ export default function Header ({basket, mMini, macPro, mStudio, monoblocs, macb
 
     const links = [
         {path: '/prdcts/monoblocks',
+            // label: 'MB M2',
             label: 'Monoblocks',
             // exact
         },
@@ -63,6 +64,7 @@ export default function Header ({basket, mMini, macPro, mStudio, monoblocs, macb
         },
         {path: '/prdcts/macbooks',
             label: 'Macbooks',
+            // label: 'MB Pro 16" intel',
             // exact
         },
     ]
@@ -120,21 +122,22 @@ export default function Header ({basket, mMini, macPro, mStudio, monoblocs, macb
                        <li className={classes.menuItem}>
                            <Link to="/about">About</Link>
                        </li>
-                       <li className={`${classes.menuItem} ${classes.dropdown}`}>
-                           <Link className={classes.menuLink} data-toggle="dropdown" to="/products">Products</Link>
-                           <div className={classes.dropdownMenu}>
-                               <a href="" className={classes.dropdownLink}>MB M2 </a>
-                               <a href="" className={classes.dropdownLink}>MBPro M1 pro</a>
-                               <a href="" className={classes.dropdownLink}>MBPro M1 max</a>
-                               <a href="" className={classes.dropdownLink}>MB M1 </a>
-                               <a href="" className={classes.dropdownLink}>MBPro 13" M1</a>
-                               <a href="" className={classes.dropdownLink}>MBPro 16" intel </a>
-                               <a href="" className={classes.dropdownLink}>MBPro 15" intel </a>
-                               <a href="" className={classes.dropdownLink}>MBPro 13" intel </a>
-                               <a href="" className={classes.dropdownLink}>MBAir 13" intel</a>
-                           </div>
-                       </li>
-                       <Dropdown title='Dropdown' links={links}/>
+                       {/*<li className={classes.dropdown}>*/}
+                       {/*<li className={`${classes.menuItem} ${classes.dropdown}`}>*/}
+                       {/*    <Link className={classes.menuLink} data-toggle="dropdown" to="/products">Dropdown</Link>*/}
+                       {/*    <div className={classes.dropdownMenu}>*/}
+                       {/*        <a href="" className={classes.dropdownLink}>MB M2 </a>*/}
+                       {/*        <a href="" className={classes.dropdownLink}>MBPro M1 pro</a>*/}
+                       {/*        <a href="" className={classes.dropdownLink}>MBPro M1 max</a>*/}
+                       {/*        <a href="" className={classes.dropdownLink}>MB M1 </a>*/}
+                       {/*        <a href="" className={classes.dropdownLink}>MBPro 13" M1</a>*/}
+                       {/*        <a href="" className={classes.dropdownLink}>MBPro 16" intel </a>*/}
+                       {/*        /!*<a href="" className={classes.dropdownLink}>MBPro 15" intel </a>*!/*/}
+                       {/*        /!*<a href="" className={classes.dropdownLink}>MBPro 13" intel </a>*!/*/}
+                       {/*        /!*<a href="" className={classes.dropdownLink}>MBAir 13" intel</a>*!/*/}
+                       {/*    </div>*/}
+                       {/*</li>*/}
+                       <Dropdown className={classes.menuItem} title='Products' links={links}/>
                        <li className={classes.menuItem}>
                            <Link to="">Prices</Link>
                        </li>
