@@ -98,13 +98,8 @@ class Displays extends Component {
                 </div>
             )
         }
-
-
         return (
             <div>
-
-
-
                <DisplayCardS/>
                 <Modal
                     item={this.state.selectedProduct}

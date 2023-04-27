@@ -5,7 +5,7 @@ import {
     Link,
     NavLink
     } from "react-router-dom";
-const Dropdown = ({title, links}) => {
+const Dropdown = ({title, links, closeMenu}) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggleDropdown = () => {
@@ -29,7 +29,14 @@ const Dropdown = ({title, links}) => {
                                key={link.path}
                                to={link.path}
                                className={classes.dropdownLink}
-                               onClick={() => setIsOpen(false)}
+                               // onClick={() =>  setIsOpen(false)}
+                               onClick={() => {
+                                   const closeMenuOnTransition = () => {
+                                       setIsOpen(false)
+                                       closeMenu()
+                                   }
+                                   closeMenuOnTransition()
+                               }}
                            >
                                {link.label}
                            </NavLink>

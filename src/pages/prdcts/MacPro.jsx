@@ -3,11 +3,11 @@ import classes from "./MacStudio.module.css";
 import {Button, Card, CardActions, CardContent, CardMedia, Container, Typography} from "@mui/material";
 import Modal from "../../components/UI/funcModal/DModal";
 
+
 class MacPro extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
             showModal: false,
             selectedProduct: null,
         }
@@ -23,7 +23,6 @@ class MacPro extends Component {
 
         }
     }
-
 
     render() {
         const {macPro, addToBasket} = this.props
@@ -45,7 +44,6 @@ class MacPro extends Component {
                 </div>
             )
         }
-
 
         const MacProCard = ({item}) => {
             return (
@@ -79,8 +77,6 @@ class MacPro extends Component {
                 </div>
             )
         }
-
-
         return (
             <div>
                 <MacPros/>
@@ -120,11 +116,8 @@ class MacPro extends Component {
                                     <h2 className={classes.desc}>
                                         Tech
                                     </h2>
-
                                     <p>{selectedProduct.tech}</p>
-
                                 </div>
-
                                 <div className={classes.specsList}>
                                     <Typography>TECHS</Typography>
                                     <ol>
