@@ -29,7 +29,6 @@ export default function HeaderThree ({state, links, basket, mMini, macPro, mStud
     const [isExpanded, setIsExpanded] = useState(false);
 
 
-    console.log(state)
 
     useEffect(() => {
         setIsExpanded(isClickedMenu);
