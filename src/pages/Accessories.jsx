@@ -1,7 +1,7 @@
 // import React, {Component} from 'react';
 import Items from "../components/Items/Items";
-import Modal from '../components/UI/funcModal/Modal'
-import classes from "../components/UI/funcModal/Modal.module.css";
+import Modal from '../components/UI/funcModal/SignInPopup/Modal'
+import classes from "../components/UI/funcModal/SignInPopup/Modal.module.css";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import {BsDoorOpen, BsXCircle} from "react-icons/bs";

@@ -1,0 +1,195 @@
+.pageTransitionContainer {
+    position: relative;
+}
+
+/*.routeSection {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+
+/* PageTransition.module.css */
+
+/* Enter transition */
+.pageEnterRight-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.pageEnterRight-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 500ms;
+}
+
+.pageEnterLeft-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.pageEnterLeft-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 500ms;
+}
+
+/* Exit transition */
+.pageEnterRight-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.pageEnterRight-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 500ms;
+}
+
+.pageEnterLeft-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.pageEnterLeft-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 500ms;
+}
+.pageEnterRight-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.pageEnterRight-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 500ms;
+}
+
+.pageEnterLeft-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.pageEnterLeft-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 500ms;
+}
+
+/* Exit transition */
+.pageEnterRight-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.pageEnterRight-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 500ms;
+}
+
+.pageEnterLeft-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.pageEnterLeft-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 500ms;
+}
+
+/* PageTransition.module.css */
+
+/* Enter transition */
+/*.pageEnterRight-enter {*/
+/*    opacity: 0;*/
+/*    transform: translateX(100%);*/
+/*}*/
+
+/*.pageEnterRight-enter-active {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*    transition: all 500ms;*/
+/*}*/
+
+/*.pageEnterLeft-enter {*/
+/*    opacity: 0;*/
+/*    transform: translateX(-100%);*/
+/*}*/
+
+/*.pageEnterLeft-enter-active {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*    transition: all 500ms;*/
+/*}*/
+
+/* Exit transition */
+/*.pageEnterRight-exit {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*}*/
+
+/*.pageEnterRight-exit-active {*/
+/*    opacity: 0;*/
+/*    transform: translateX(-100%);*/
+/*    transition: all 500ms;*/
+/*}*/
+
+/*.pageEnterLeft-exit {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*}*/
+
+/*.pageEnterLeft-exit-active {*/
+/*    opacity: 0;*/
+/*    transform: translateX(100%);*/
+/*    transition: all 500ms;*/
+/*}*/
+/*.pageEnterRight-enter {*/
+/*    opacity: 0;*/
+/*    transform: translateX(100%);*/
+/*}*/
+
+/*.pageEnterRight-enter-active {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*    transition: all 500ms;*/
+/*}*/
+
+/*.pageEnterLeft-enter {*/
+/*    opacity: 0;*/
+/*    transform: translateX(-100%);*/
+/*}*/
+
+/*.pageEnterLeft-enter-active {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*    transition: all 500ms;*/
+/*}*/
+
+/* Exit transition */
+/*.pageEnterRight-exit {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*}*/
+
+/*.pageEnterRight-exit-active {*/
+/*    opacity: 0;*/
+/*    transform: translateX(-100%);*/
+/*    transition: all 500ms;*/
+/*}*/
+
+/*.pageEnterLeft-exit {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0%);*/
+/*}*/
+
+/*.pageEnterLeft-exit-active {*/
+/*    opacity: 0;*/
+/*    transform: translateX(100%);*/
+/*    transition: all 500ms;*/
+/*}*/
+

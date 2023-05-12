@@ -1,0 +1,35 @@
+.carousel-transition-left-enter {
+    transform: translateX(100%);
+}
+
+.carousel-transition-left-enter-active {
+    transform: translateX(0%);
+    transition: transform 500ms ease-in-out;
+}
+
+.carousel-transition-left-exit {
+    transform: translateX(0%);
+}
+
+.carousel-transition-left-exit-active {
+    transform: translateX(-100%);
+    transition: transform 500ms ease-in-out;
+}
+
+.carousel-transition-right-enter {
+    transform: translateX(-100%);
+}
+
+.carousel-transition-right-enter-active {
+    transform: translateX(0%);
+    transition: transform 500ms ease-in-out;
+}
+
+.carousel-transition-right-exit {
+    transform: translateX(0%);
+}
+
+.carousel-transition-right-exit-active {
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+}

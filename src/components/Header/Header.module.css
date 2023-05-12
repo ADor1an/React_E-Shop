@@ -1,3 +1,6 @@
+.header {
+    margin: 2vh;
+}
 .headerWrapper {
     margin: 0 auto;
     max-width: 1920px;
@@ -56,6 +59,7 @@ header nav  {
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
+    padding: 1vh 5vw;
 }
 .menuItem {
     display: flex;
@@ -212,15 +216,21 @@ Button.basketBtn {
     /*fill: #fff;*/
     fill: #61dafb;
 }
-
-.dropedMenu {
+.adaptBtn {
     display: none !important;
-    height: 4em;
-    width: 4em;
+    height: 0;
+    width: 0;
     position: relative !important;
-    top: 0vh;
-    right: 0vw;
 }
+
+/*.dropedMenu {*/
+/*    display: none !important;*/
+/*    height: 4em;*/
+/*    width: 4em;*/
+/*    position: relative !important;*/
+/*    top: 0vh;*/
+/*    right: 0vw;*/
+/*}*/
 .basketWrap {
     display: flex;
     flex-direction: column;
@@ -273,7 +283,7 @@ Button.basketBtn {
     height: 40px;
 }
 .plus:hover{
-  fill: greenyellow;
+    fill: greenyellow;
 }
 .minus {
     width: 40px;
@@ -290,9 +300,36 @@ Button.basketBtn {
     font-size: 25px;
 }
 
+/* page transition*/
+
+/* page transition*/
+
+.fadeEnter {
+    opacity: 0;
+}
+
+.fadeEnterActive {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fadeExit {
+    opacity: 1;
+}
+
+.fadeExitActive {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+
 @media screen and (max-width: 768px) {
+    .header {
+        margin: 0 auto;
+    }
     .menuList {
-        transition: all .8s ease-out ;
+        transition: all .45s ease-out ;
+        /*transition: all .8s ease-out ;*/
         transform: translateY(-100vh);
         /*display: none;*/
         /*visibility: hidden;*/
@@ -318,7 +355,7 @@ Button.basketBtn {
         padding: 10px 10px;
     }
     /*.menuList.unclicked {*/
-        /*z-index: -1030;*/
+    /*z-index: -1030;*/
     /*}*/
     .menuList.clicked {
         display: flex;
@@ -361,19 +398,35 @@ Button.basketBtn {
     .presentation {
         margin: 5px auto;
     }
-    .dropedMenu {
-        display: block !important;
+
+    .adaptBtn {
+        display: flex !important;
         height: 4em;
         width: 4em;
-        position: absolute !important;
-        top: 0.9em;
-        right: 4vw;
+        position: fixed;
+        /*top: 0.9em;*/
+        /*right: 4vw;*/
+        top: 0em;
+        right: 0vw;
         z-index: 1030;
+        /*background-color: darkred !important;*/
+        padding: 5px !important;
+
     }
-    .dropedMenu .notActivated {
-        height: 2em;
-        width: 2em;
-    }
+    /*.dropedMenu {*/
+    /*    display: block !important;*/
+    /*    height: 4em;*/
+    /*    width: 4em;*/
+    /*    position: absolute !important;*/
+    /*    top: 0.9em;*/
+    /*    right: 4vw;*/
+    /*    z-index: 1030;*/
+    /*}*/
+    /*.dropedMenu .notActivated {*/
+    /*    height: 2em;*/
+    /*    width: 2em;*/
+    /*}*/
+
     .dropdownMenu .dropdownLink {
         font-size: 16px;
     }

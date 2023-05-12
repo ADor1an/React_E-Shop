@@ -1,97 +1,91 @@
-import React, {Component} from 'react';
-import classes from "./MacStudio.module.css";
+import React, { useState} from 'react';
+import classes from "./CardItems.module.css";
 import {Button, Card, CardActions, CardContent, CardMedia, Container, Typography} from "@mui/material";
-import Modal from "../../components/UI/funcModal/DModal";
+import Modal from '../../components/UI/funcModal/FunctionalProductPopup/FunctionalProductPopup';
 
+const MacPro = ({macPro, addToBasket}) => {
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [showModal, setShowModal] = useState(false);
 
-class MacPro extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showModal: false,
-            selectedProduct: null,
-        }
-    }
-    toggleModal = (item) => {
-        this.setState({showModal: !this.state.showModal, selectedProduct: item});
-        // document.body.style.overflowY = 'hidden'
-        if (this.state.showModal) {
-            document.body.style.overflowY = 'unset'
-            this.setState({selectedProduct: null})
+    const toggleModal = (item) => {
+        setShowModal(!showModal);
+        setSelectedProduct(item);
+        if (showModal) {
+            document.body.style.overflowY = 'unset';
+            setSelectedProduct(null);
         } else {
-            document.body.style.overflowY = 'hidden'
-
+            document.body.style.overflowY = 'hidden';
         }
+    };
+
+    const MacProCards = () => {
+        return (
+            <div className={classes.Items}>
+                <div>
+                    <Typography align={'center'}  gutterBottom variant="h3" >Mac Pros</Typography>
+                </div>
+                <Container>
+                    <main>
+                        {macPro.map((item,index) => (
+                            <MacProCard item={item} key={index} addToBasket={addToBasket} />
+                        ))}
+                    </main>
+                </Container>
+            </div>
+        )
     }
 
-    render() {
-        const {macPro, addToBasket} = this.props
-        const {selectedProduct} = this.state
-
-        const MacPros = () => {
-            return (
-                <div className={classes.MSItems}>
-                    <div>
-                        <Typography align={'center'}  gutterBottom variant="h3" >Mac Pros</Typography>
-                    </div>
-                    <Container>
-                        <main>
-                            {macPro.map((item,index) => (
-                                <MacProCard item={item} key={index} />
-                            ))}
-                        </main>
-                    </Container>
-                </div>
-            )
-        }
-
-        const MacProCard = ({item}) => {
-            return (
-                <div className={classes.MSItem}>
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="220"
-                            image={item.img}
-                            title={item.title}
-                        />
-                        <CardContent>
-                            <Typography
-                                gutterBottom
-                                variant="h3"
-                            >
-                                {item.title}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small"
-                                // onClick={() => this.toggleModal(el)}
-                                    onClick={() => this.toggleModal(item)}
-                            >Learn More
-                            </Button>
-                        </CardActions>
-                    </Card>
-                </div>
-            )
-        }
+    const MacProCard = ({item}) => {
         return (
-            <div>
-                <MacPros/>
+            <div className={classes.Item}>
+                <Card sx={{ maxWidth: 345 }}>
+                    <CardMedia
+                        component="img"
+                        alt="green iguana"
+                        height="220"
+                        image={item.img}
+                        title={item.title}
+                    />
+                    <CardContent>
+                        <Typography
+                            gutterBottom
+                            variant="h3"
+                        >
+                            {item.title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button size="small"
+                                onClick={() => toggleModal(item)}
+                        >Learn More
+                        </Button>
+                    </CardActions>
+                </Card>
+            </div>
+        )
+    }
 
-                <Modal
-                    item={this.state.selectedProduct}
-                    show={this.state.showModal}
-                    closeModal={this.toggleModal}
-                >
-                    {selectedProduct && (
-                        // <div className={classes.ModalBBody}>
-                        <div>
-                            <div className={classes.ModalHead}>
-                                <Typography className={classes.ModalCaption}>{selectedProduct.title}</Typography>
-                            </div>
+    return(
+        <div>
+            <MacProCards/>
+
+            <Modal
+                item={selectedProduct}
+                show={showModal}
+                closeModal={toggleModal}
+            >
+                {selectedProduct && (
+                    // <div className={classes.ModalBBody}>
+                    <div>
+                        <div className={classes.ModalHead}>
+                            <Typography
+                                className={classes.ModalCaption}
+                            >{selectedProduct.title}</Typography>
+                        </div>
+
+                        <div className={classes.ModalContentParent}>
                             <div className={classes.ModalContent}>
                                 <figure>
                                     <img src={selectedProduct.img} alt={selectedProduct.title}/>
@@ -100,13 +94,12 @@ class MacPro extends Component {
                                     <Button size='small'
                                             variant='contained'
                                             className={classes.addBtn}
-                                        // onClick={() => this.props.addToOrder(selectedProduct); this.toggleModal() }
                                             onClick={() => {
                                                 // addToBasket(selectedProduct);
                                                 // this.toggleModal()
                                                 const handleAddToBasket = () => {
                                                     addToBasket(selectedProduct);
-                                                    this.toggleModal();
+                                                    toggleModal();
                                                 };
                                                 handleAddToBasket();
                                             }}
@@ -138,15 +131,19 @@ class MacPro extends Component {
                                     </ol>
                                 </div>
                             </div>
+
                         </div>
-                    )
-                    }
+                    </div>
+                )
+                }
 
-                </Modal>
+            </Modal>
 
-            </div>
-        );
-    }
+        </div>
+
+    )
 }
+
+
 
 export default MacPro;

@@ -5,7 +5,7 @@ import {
     Link,
     NavLink
     } from "react-router-dom";
-const Dropdown = ({title, links, closeMenu}) => {
+const Dropdown = ({title, links, closeMenu, setCurrentKey}) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggleDropdown = () => {
@@ -16,6 +16,7 @@ const Dropdown = ({title, links, closeMenu}) => {
 
         }
       }
+
     return (
         <div className={classes.dropdown}>
             <button className={`${classes.dropdownBtn} ${isOpen ? classes.activeDropBtn : ''}`}
@@ -28,12 +29,14 @@ const Dropdown = ({title, links, closeMenu}) => {
                            <NavLink
                                key={link.path}
                                to={link.path}
+                               // state={link.state}
                                className={classes.dropdownLink}
                                // onClick={() =>  setIsOpen(false)}
                                onClick={() => {
                                    const closeMenuOnTransition = () => {
                                        setIsOpen(false)
                                        closeMenu()
+                                       // setCurrentKey(link.currentKey)
                                    }
                                    closeMenuOnTransition()
                                }}

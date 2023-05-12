@@ -1,6 +1,12 @@
 .Items {
 
 }
+
+.Heading {
+    margin: 4vh 0 !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+}
 .Items div.textContainer {
     display: flex;
 }
