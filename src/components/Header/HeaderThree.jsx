@@ -73,8 +73,12 @@ export default function HeaderThree ({state, links, basket, mMini, macPro, mStud
         document.body.style.overflowY = 'unset'
 
     }
-
-
+    const incr = () => {
+        setCount(count => ++count)
+    }
+    const decr = () => {
+        setCount(count => --count)
+    }
     return (
    <>
        <header className={classes.header}>

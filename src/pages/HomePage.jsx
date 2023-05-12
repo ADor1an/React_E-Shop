@@ -20,7 +20,6 @@ const HomePage = () => {
             linkLabel: 'Imacs',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos dolore eius eum hic in incidunt minima pariatur quidem quisquam? ',
             alt: null,
-            state: { direction: isForward ? 'back' : 'forward' },
 
         },
         {
@@ -35,7 +34,6 @@ const HomePage = () => {
             linkLabel: 'Mac Pro',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos dolore eius eum hic in incidunt minima pariatur quidem quisquam? ',
             alt: null,
-            state: { direction: isForward ? 'back' : 'forward' },
 
         },
         {
@@ -50,7 +48,6 @@ const HomePage = () => {
             linkLabel: 'Mac Studio',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos dolore eius eum hic in incidunt minima pariatur quidem quisquam? ',
             alt: null,
-            state: { direction: isForward ? 'back' : 'forward' },
 
         },
         {
@@ -65,7 +62,6 @@ const HomePage = () => {
             linkLabel: 'Mac Mini',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos dolore eius eum hic in incidunt minima pariatur quidem quisquam? ',
             alt: null,
-            state: { direction: isForward ? 'back' : 'forward' },
 
         },
         {
@@ -81,7 +77,6 @@ const HomePage = () => {
             linkLabel: 'Monitors',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos dolore eius eum hic in incidunt minima pariatur quidem quisquam? ',
             alt: null,
-            state: { direction: isForward ? 'back' : 'forward' },
 
         },
         {
@@ -95,7 +90,6 @@ const HomePage = () => {
             linkLabel: 'Macbooks',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos dolore eius eum hic in incidunt minima pariatur quidem quisquam? ',
             alt: null,
-            state: { direction: isForward ? 'back' : 'forward' },
 
         },
         {
@@ -110,7 +104,6 @@ const HomePage = () => {
             linkLabel: 'Accessories',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos dolore eius eum hic in incidunt minima pariatur quidem quisquam? ',
             alt: null,
-            state: { direction: isForward ? 'back' : 'forward' },
 
         },
     ])
