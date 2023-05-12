@@ -24,7 +24,7 @@ export default function HeaderThree ({state, links, basket, mMini, macPro, mStud
 
     const [isClickedMenu, setIsClickedMenu] = useState(false)
     const [showBasket, setShowBasket] = useState(false)
-    // const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
     const [showMenu, setShowMenu] = useState(false)
     const [isExpanded, setIsExpanded] = useState(false);
 
